@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Portfolio"content="Escribes Adrian">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -22,17 +23,17 @@
     </nav>
     <section>
         <h2>PROJETS REALISES</h2>
-        <img src="th.jpg" alt="">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
         <p>Projet 1 : Lorem ipsum dolor sit amet,consectetur 
             adipiscing elit.Nunc maximus,nulla ut 
             commodo sagittis,sapien dui mattis dui,
             non pulvinar lorem felis nec erat</p>
-        <img src="th.jpg" alt="">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
         <p>Projet 2 : Lorem ipsum dolor sit amet,consectetur 
             adipiscing elit.Nunc maximus,nulla ut 
             commodo sagittis,sapien dui mattis dui,
             non pulvinar lorem felis nec erat</p>
-        <img src="th.jpg" alt="">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
         <p>Projet 3 : Lorem ipsum dolor sit amet,consectetur 
            adipiscing elit.Nunc maximus,nulla ut 
            commodo sagittis,sapien dui mattis dui,
@@ -45,7 +46,7 @@
     </section> 
     <section>
         <h2>ETUDES</h2>
-        <img src="th.jpg" alt="">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
         <ul>
             <li>Nom</li>
             <li>Prénom</li>
@@ -70,8 +71,8 @@
     </section>
     <article>
         <h2>ARTICLES</h2>
-        <img src="th.jpg" alt="">
-        <img src="th.jpg" alt="">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
+        <img src="th.jpg" alt="une photo d'un cadre vide">
         <ol>
             <li>Lorem ipsum dolor sit amet,consectetur 
             adipiscing elit.Nunc maximus,nulla ut 
@@ -90,16 +91,26 @@
         </ul>
     </article>
     <section>
-        <h2>CONTACT</h2>
-        <ul>
-            <li>Nom et Prénom</li>
-            <li><input name="name"></li>
-            <li>E Mail</li>
-            <li><input type="email"></li>
-            <li>Message</li>
-            <li><input type="text"></li>
-            <li><input type="submit"></li>
-        </ul>
+        <div class="contact">
+           <h2>CONTACT</h2>
+           <form action="/page-traitement-données" method="post">
+              <div>
+                 <label for="nom">Nom et Prénom</label>
+                 <input type="text" id="nom" name="nom" required>
+              </div>
+              <div>
+                 <label for="email">E mail</label>
+                 <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                 <label for="message">Message</label>
+                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <div>
+                 <button type="submit">Envoyé</button>
+              </div>
+           </form>
+        </div>
     </section> 
     <footer>
         <h3>monportfolio.com</h3>
