@@ -2,6 +2,12 @@
    margin: 0%;
    padding: 0%; 
 }
+.photo-profil {
+   filter: grayscale(100%);
+}
+.opacity img :hover {
+    opacity: .5;
+}
 header {
    background-color: rgb(223, 210, 210);
    text-align: center;
@@ -20,7 +26,4 @@ nav.scrollmenu a {
 }
 nav.scrollmenu a:hover {
    background-color: aquamarine;
-}
-.photo-profil {
-   -webkit-filter: grayscale(100%);
 }
